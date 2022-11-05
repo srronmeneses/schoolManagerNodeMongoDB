@@ -1,8 +1,8 @@
-require('dotenv').config();
-require('./server')
+require("dotenv").config()
+require("./server")
 const {
-    environmentsUtils: { validateRequiredEnvs }
-} = require('./utils')
+  environmentsUtils: { validateRequiredEnvs },
+} = require("./utils")
 
-const requiredEnvs = ['PORT']
+const requiredEnvs = ["PORT"]
 validateRequiredEnvs(requiredEnvs)

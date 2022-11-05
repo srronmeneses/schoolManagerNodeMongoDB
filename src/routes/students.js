@@ -1,10 +1,15 @@
-const express = require('express')
+const express = require("express")
 const router = express.Router()
-const { getAll, createOne, updateOne, deleteOne } = require('../components/students')
+const {
+  getAll,
+  createOne,
+  updateOne,
+  deleteOne,
+} = require("../components/students")
 
-router.get('/', getAll)
-router.post('/', createOne)
-router.put('/', updateOne)
-router.delete('/', deleteOne)
+router.get("/", getAll)
+router.post("/", createOne)
+router.put("/", updateOne)
+router.delete("/", deleteOne)
 
 module.exports = router

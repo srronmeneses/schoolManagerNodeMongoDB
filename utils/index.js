@@ -1,5 +1,5 @@
-const environmentsUtils = require('./environments')
+const environmentsUtils = require("./environments")
 
 module.exports = {
-    environmentsUtils,
+  environmentsUtils,
 }
