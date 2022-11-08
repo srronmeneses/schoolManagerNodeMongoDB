@@ -17,7 +17,7 @@ mongoDBhelpers.connect()
 // ? CIERRA LA CONEXION CON EL DATABASE EN MONGO ATLAS
 process.on("SIGINT", () => {
   mongoDBhelpers.disconnect().then((connectionState) => {
-    console.log(`readyState ${connectionState}: Database disconnect..!`)
+    console.log("readyState ", connectionState, " :Database disconnect..!")
     console.log("Closing process")
     process.exit(0)
   })

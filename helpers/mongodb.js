@@ -10,11 +10,13 @@ const connect = async () => {
   try {
     if (!checkConnection()) {
       console.log(
-        `readyState ${checkConnection() + 2}: Connecting to DataBase..`
+        "readyState",
+        checkConnection() + 2,
+        ": Connecting to DataBase.."
       )
       await mongoose.connect(mongoURI)
     }
-    console.log(`readyState ${checkConnection()}: Connected successfully!`)
+    console.log("readyState", checkConnection(), ": Connected successfully!")
     // ? Una vez que se establece la conexion con la base de datos podemos iniciar el servidor
     require(`../server`)
   } catch (err) {
